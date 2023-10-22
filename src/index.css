@@ -1,8 +1,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +10,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+.text-neutral-100 {
+  color: #F6F6F6;
+font-family: Handlee;
+font-size: 2.8125rem;
+font-style: normal;
+font-weight: 400;
+line-height: 3.75rem; /* 133.333% */
+}
+
+.trans-text{
+  width: 12.5625rem;
+  height: 5.625rem;
+  flex-shrink: 0;
+}
+
+.trans-files{
+  width: 12.5625rem;
+height: 5.625rem;
+flex-shrink: 0;
+}
+.ai-write{
+  width: 12.5625rem;
+height: 5.625rem;
+flex-shrink: 0;
+}
+.header{
+  width: 100%;
+height: 5.625rem;
+flex-shrink: 0;
+}
+
+.header{  
+  border-radius: 1.25rem 1.25rem 0rem 0rem;
+
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
