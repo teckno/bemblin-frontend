@@ -12,6 +12,7 @@ code {
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .text-neutral-100 {
   color: #F6F6F6;
 font-family: Handlee;
@@ -19,6 +20,15 @@ font-size: 2.8125rem;
 font-style: normal;
 font-weight: 400;
 line-height: 3.75rem; /* 133.333% */
+}
+
+.start-text {
+font-family: poppins;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.875rem; /* 150% */
+letter-spacing: 0em;
 }
 
 .trans-text{
@@ -37,17 +47,61 @@ flex-shrink: 0;
 height: 5.625rem;
 flex-shrink: 0;
 }
-.header{
-  width: 100%;
-height: 5.625rem;
-flex-shrink: 0;
-}
+
 
 .header{  
   border-radius: 1.25rem 1.25rem 0rem 0rem;
+  background-color: #FFFFFF;
+  background-opacity: 0.9;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 1.25rem 1.25rem 0 0;
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: #A0AEC0
 
 }
 
+.trans-type{
+  width: 12.5625rem;
+  display: flex;
+  width: 7.375rem;
+  height: 1.25rem;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #46484D;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.trans-lang{
+  display: flex;
+width: 7.375rem;
+height: 0.25rem;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+color: #46484D;
+font-family: Poppins;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+}
+
+.trans-files{
+ 
+
+
+}
 
 @tailwind base;
 @tailwind components;
