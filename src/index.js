@@ -177,7 +177,23 @@ function MyComponent(props) {
         <div className="self-stretch px-5 max-md:max-w-full">
           <div className="gap-5 flex max-md:flex-col max-md:items-stretch max-md:gap-0">
             <div className="flex flex-col items-stretch w-6/12 max-md:w-full max-md:ml-0">
-              <div className="bg-white bg-opacity-90 flex w-[648px] h-[445px] flex-col mx-auto rounded-none border-[0.5px] border-solid border-neutral-500 max-md:max-w-full" style={{marginLeft: '-20px'}} />
+              <textarea 
+                className="bg-white bg-opacity-90 flex w-[648px] h-[445px] flex-col mx-auto rounded-none border-[0.5px] border-solid border-neutral-500 max-md:max-w-full" 
+                style={{
+                  marginLeft: '-18px', 
+                  fontSize: '20px', 
+                  fontFamily: 'Poppins', 
+                  textAlign: 'center', 
+                  paddingTop: '200px', 
+                  backgroundImage: `url(${process.env.PUBLIC_URL}/Images/background.png)`, 
+                  backgroundSize: 'cover', 
+                  backgroundPosition: 'center center'
+                }}
+                onFocus={(e) => e.target.value = ''}
+              >
+              Drag and drop to translate PDF, Word (.docx), and PowerPoint (.pptx) files with our document translator.
+              Click the microphone to translate speech.
+              </textarea>
             </div>
             <div className="flex flex-col items-stretch w-6/12 ml-5 max-md:w-full max-md:ml-0">
               <div className="bg-white bg-opacity-90 flex w-[648px] h-[445px] flex-col mx-auto rounded-none border-[0.5px] border-solid border-neutral-500 max-md:max-w-full" style={{marginLeft: '-40px'}}  />
