@@ -1,34 +1,46 @@
-name: CI
+name: React Test
 
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - master
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
+    - name: Set Up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 14
 
-      - name: Install Dependencies
-        run: npm install
+    - name: Install Dependencies
+      run: npm install
 
-      - name: Build
-        run: |
-          npm run build
-          if [ $? -ne 0 ]; then
-            echo "Build failed"
-            exit 1
-          fi
+    - name: Run Tests
+      run: npm test
 
-      - name: Test
-        run: npm test
+    - name: Comment on Pull Request
+      if: always()
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const { owner, repo } = context.repo;
+          const { number } = context.issue;
 
+          const testResults = `
+          \n\n### Test Results\n\n
+          Test Status: **${{ job.status }}**
+          `;
+
+          github.issues.createComment({
+            owner,
+            repo,
+            issue_number: number,
+            body: testResults,
+          });
