@@ -12,7 +12,12 @@ function Header() {
   return (
     
     <div className="desktop-view">
-    <div className="header-top flex-col overflow-hidden relative flex min-h-[55px] justify-center items-center px-16 py-2 max-md:px-5 sticky top-0 bg-[#235390] z-10" style={{ position: 'sticky', top: 0 }}>
+    <div className="header-top flex-col overflow-hidden relative flex min-h-[55px] justify-center items-center px-16 py-2 max-md:px-5 sticky top-0 bg-[#235390] z-10" style={{
+        backgroundColor: '#235390',
+        position: 'sticky',
+        top: 0,
+        zIndex: 100
+      }} >
       <img
         loading="lazy"
         className="absolute h-full w-full object-cover object-center inset-0"
@@ -31,28 +36,29 @@ function Header() {
         <div className="nav-main self-stretch flex justify-between gap-5 items-start max-md:max-w-full max-md:flex-wrap max-md:justify-center">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6017c28533c86beaa129394a71e0605393815a819a0a0b382583da235949f241?"
+            src={process.env.PUBLIC_URL + '/Images/people.svg'}
+
             alt="People"
             title="People"
             className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff7e5b461e0385c827d2c05818bac89d0155081f3cb6b2f773157c25e3ab3f6e?"
+            src={process.env.PUBLIC_URL + '/Images/home.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
             alt="Translation"
             title="Translation"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/feb75ea868216da605fe79df88b5a61b03498465bda4ebb0f2738b15d4586748?"
+            src={process.env.PUBLIC_URL + '/Images/trans.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
             alt="Games"
             title="Games"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/02918fdffb87f7d7593fd1992c58eb15f09e5553e01f1437a8985141114da090?"
+            src={process.env.PUBLIC_URL + '/Images/Game.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <a href="/dictionary">
@@ -60,7 +66,7 @@ function Header() {
               loading="lazy"
               alt="Dictionary"
               title="Dictionary"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/fded0b3c07fa59ee9445c305db55aa8a266332b5c815fc6e4dfd471dc208b36d?"
+              src={process.env.PUBLIC_URL + '/Images/Comm.svg'}
               className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
             />
           </a>

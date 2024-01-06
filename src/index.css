@@ -188,6 +188,15 @@ height: 4.6rem;
 flex-shrink: 0;
 }
 
+.desktop-view {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+
+
 .aspect-square {
   transition: transform 0.3s ease-in-out;
   margin-right: 32px;
@@ -274,8 +283,146 @@ flex-shrink: 0;
 /*Dictionary page  */
 
 .dictionary-header{
-  margin-left: 15rem;
+  margin-left: 3rem;
 }
 .dictionary-divider{
-  margin-left: 15rem;
+  margin-left: 3rem;
+}
+
+.alphabet{
+  border-left-width: 45px;
+  margin-top: 8px;
+}
+
+.search-bar{
+  margin-left: 45px;
+  margin-top: 80px;
+}
+
+.alphabet-2{
+  margin-left: 24px;
+  margin-top: 2.625rem;
+}
+.main-content{
+  margin-left: 115px;
+  margin-right: 115px;
+  
+}
+
+.dictionary{
+  flex-shrink: 0;
+  width: 247px;
+  height: 223px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #235390;
+  margin-left: 110px;
+}
+
+.dictionary-title{
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  /* letter-spacing: -0.408px; */
+  outline-width: 45px;
+  margin-left: 45‒;
+  margin-left: 45px;
+}
+
+.defination-title{
+
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    margin-left: 45px;
+
+
+}
+
+.dictionary-line{
+  width: 130.501px;
+height: 0.336px;
+transform: rotate(89.852deg);
+flex-shrink: 0;
+stroke-width: 1px;
+stroke: rgba(255, 255, 255, 0.87);
+
+
+}
+
+.dictionary-noun{
+  width: 179px;
+height: 30px;
+flex-shrink: 0;
+color: #FFF;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 157.143% */
+letter-spacing: -0.408px;
+margin-left: 55px;
+}
+
+.dictionary-verb{
+  width: 179px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.408px;
+  margin-left: 55px;
+
+}
+
+.dictionary-sentence{
+  width: 179px;
+  height: 30px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.408px;
+  margin-left: 55px;
+
+}
+
+.dictionary-display{
+  border-radius: 20px;
+border: 0.2px solid #000;
+background: rgba(255, 255, 255, 0.87);
+width: 991px;
+height: 223px;
+flex-shrink: 1;
+padding-right: 3px;
+  margin-right: 3px;
+  padding-left: 34px;
+  margin-left: 370px;
+  border-bottom-width: 9px;
+  padding-bottom: 90px;
+  margin-bottom: 90px;
+  margin-top: -220px;
+}
+
+.dictionary-display-def{
+  margin-top: 45px;
 }

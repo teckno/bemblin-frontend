@@ -7,7 +7,12 @@ function Header() {
   return (
     
     <div className="desktop-view">
-    <div className="header-top flex-col overflow-hidden relative flex min-h-[55px] justify-center items-center px-16 py-2 max-md:px-5 sticky top-0 bg-[#235390] z-10" style={{ position: 'sticky', top: 0 }}>
+    <div className="header-top flex-col overflow-hidden relative flex min-h-[55px] justify-center items-center px-16 py-2 max-md:px-5 sticky top-0 bg-[#235390] z-10" style={{
+        backgroundColor: '#235390',
+        position: 'sticky',
+        top: 0,
+        zIndex: 100
+      }} >
       <img
         loading="lazy"
         className="absolute h-full w-full object-cover object-center inset-0"
@@ -26,28 +31,29 @@ function Header() {
         <div className="nav-main self-stretch flex justify-between gap-5 items-start max-md:max-w-full max-md:flex-wrap max-md:justify-center">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/6017c28533c86beaa129394a71e0605393815a819a0a0b382583da235949f241?"
+            src={process.env.PUBLIC_URL + '/Images/people.svg'}
+
             alt="People"
             title="People"
             className="aspect-square object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/ff7e5b461e0385c827d2c05818bac89d0155081f3cb6b2f773157c25e3ab3f6e?"
+            src={process.env.PUBLIC_URL + '/Images/home.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
             alt="Translation"
             title="Translation"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/feb75ea868216da605fe79df88b5a61b03498465bda4ebb0f2738b15d4586748?"
+            src={process.env.PUBLIC_URL + '/Images/trans.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <img
             loading="lazy"
             alt="Games"
             title="Games"
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/02918fdffb87f7d7593fd1992c58eb15f09e5553e01f1437a8985141114da090?"
+            src={process.env.PUBLIC_URL + '/Images/Game.svg'}
             className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
           />
           <a href="/dictionary">
@@ -55,7 +61,7 @@ function Header() {
               loading="lazy"
               alt="Dictionary"
               title="Dictionary"
-              src="https://cdn.builder.io/api/v1/image/assets/TEMP/fded0b3c07fa59ee9445c305db55aa8a266332b5c815fc6e4dfd471dc208b36d?"
+              src={process.env.PUBLIC_URL + '/Images/Comm.svg'}
               className="aspect-square object-contain object-center w-10 fill-white stroke-[1px] stroke-black stroke-opacity-10 overflow-hidden shrink-0 max-w-full"
             />
           </a>
@@ -68,6 +74,9 @@ function Header() {
         
       </div>
     </div>
+
+
+
 
       <div className="mobile-view">
       <div className="bg-blue-900 flex items-center justify-between gap-5 pl-12 pr-10 max-md:flex-wrap max-md:px-5"
@@ -122,9 +131,10 @@ function Header() {
 )}
 
 
+    </div>
+  
 </div>
-</div>
-</div>
+    </div>
   );
 }
 
@@ -137,7 +147,282 @@ function Headline() {
       </div>
       <div className="dictionary-divider bg-neutral-500 w-[931px] shrink-0 h-[5px] ml-10 mt-1.5 self-start max-md:max-w-full" />       
       
+      <div className="flex max-w-[697px] flex-col items-stretch">
+
+      
+  
+   
+ 
+        <div class= 'alphabet' style={{ display: 'flex', gap: '10px' }}>
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/A.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+          
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/B.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/C.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/D.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+          
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/E.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/F.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/G.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/H.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/I.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/J.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src={process.env.PUBLIC_URL + '/Images/dictionary/K.svg'}
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+         
+          {/* Rest of the images */}
+          <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+           {/* Rest of the images */}
+           <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+          
+
+        </div>
+
+
+
+
+        <div className="alphabet-2 flex w-[228px] max-w-full items-stretch gap-1.5 mt-2.5 px-5 self-start">
+       {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
+
+          {/* Rest of the images */}
+       <div style={{ height: '3px', width: '30px' }}>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
+              className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+            />
+          </div>
     </div>
+
+
+
+
+        <div type="text" class="search-bar border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-full text-sm focus:outline-none w-full" placeholder="Search">
+    <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+    
+      <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 1 0-.7.7l.27.28v.79l4.25 4.25a1 1 0 0 0 1.41-1.41L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+      </svg>
+    </button>
+  </div>
+
+
+</div>
+</div>
+ 
+
+
+
+
+
+      
+
+
+
+   
+
+    
   );
 }
 
@@ -275,6 +560,46 @@ function Letters() {
        
       );
     }
+// main 
+
+function Maincontent() {
+  return (
+    <div className="self-stretch mt-5 max-md:max-w-full max-md:mr-1.5">
+      <div className="dictionary">
+        <div className='dictionary-title'>
+        Dictionary
+        </div>
+        <div className='defination-title'>
+        Defination
+        </div>
+       
+       <svg className='dictionary-line' width="1" height="131" viewBox="0 0 1 131" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0.5 -0.0012207L0.499998 130.5" stroke="white" stroke-opacity="0.87"/>
+</svg>
+
+<div className='dictionary-noun'>
+  Noun
+</div>
+<div className='dictionary-verb'>
+  Verb
+</div>
+<div className='dictionary-sentence'>
+  Example of sentence
+</div>
+
+       
+      </div>
+   
+      
+      <div className='dictionary-display'>
+        <div className='dictionary-display-def'>
+          Word
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
 // BottomIcons Component
 function BottomIcons() {
@@ -348,6 +673,7 @@ function Dictionary() {
       <Header />
       <Headline />
       <Letters/>
+      <Maincontent/>
       <BottomIcons/>
      
       {/* Include other components here */}
