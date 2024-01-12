@@ -212,11 +212,13 @@ function TranslationOptions() {
                 <div className="justify-center text-black text-center text-sm font-medium my-auto" style={{display: 'flex', width: '8.1875rem', height: '1.3125rem', flexDirection: 'column', justifyContent: 'center', flexShrink: 0, color: '#000', textAlign: 'center', fontFamily: 'Poppins', fontSize: '0.875rem', fontStyle: 'normal', fontWeight: 500, lineHeight: 'normal'}}>
                 Detect language
               </div>
+              
               <img
                 loading="lazy"
                 src={process.env.PUBLIC_URL + '/Images/Down-arrow.svg'}
-                className="aspect-[0.76] object-cover object-center w-[22px] overflow-hidden max-w-full shrink-0"
+                className="justify-center text-center aspect-[0.76] object-cover object-center w-[22px] overflow-hidden max-w-full shrink-0"
               />
+              
             </div>
             <div className="self-stretch flex items-start justify-between gap-1.5 max-md:justify-center">
               <img
@@ -224,9 +226,9 @@ function TranslationOptions() {
                 src={process.env.PUBLIC_URL + '/Images/next1.svg'}
                 className="aspect-[0.92] object-cover object-center w-6 overflow-hidden self-center max-w-full shrink-0 my-auto"
               />
-              <div className="justify-center text-black text-center text-sm font-medium my-auto" style={{ display: 'flex', width: '8.1875rem', height: '1.3125rem', flexDirection: 'column', justifyContent: 'center', flexShrink: 0, color: '#000', textAlign: 'center', fontFamily: 'Poppins', fontSize: '0.875rem', fontStyle: 'normal', fontWeight: 500, lineHeight: 'normal' }}>
+              
                 English
-              </div>
+              
               <img
                 loading="lazy"
                 src={process.env.PUBLIC_URL + '/Images/Down-arrow.svg'}
@@ -248,40 +250,27 @@ function TranslationOptions() {
 
         <div className='trans-mobile-view'>  
 
-        <div className="header-mobile bg-white bg-opacity-90 self-stretch flex w-full items-stretch justify-between gap-5 mt-8 pl-14 pr-14 py-3.5 rounded-3xl border-[0.5px] border-solid border-neutral-500 max-md:max-w-full max-md:flex-wrap max-md:px-5">
-      <div className="self-center flex items-center gap-2 my-auto">
-        <div className="justify-center text-black text-center text-sm font-medium grow whitespace-nowrap my-auto">
-          Detect language
-        </div>
-        <img
-          loading="lazy"
-          srcSet="..."
-          className="aspect-[0.76] object-contain object-center w-[22px] overflow-hidden self-stretch shrink-0 max-w-full"
-        />
-      </div>
-      <div className="self-center flex items-stretch justify-between gap-5 my-auto">
-        <div className="flex flex-col items-end">
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="aspect-square object-contain object-center w-[17px] overflow-hidden max-w-full"
-          />
-          <img
-            loading="lazy"
-            srcSet="..."
-            className="aspect-[1.15] object-contain object-center w-[15px] overflow-hidden max-w-full self-start"
-          />
-        </div>
-        <div className="justify-center text-black text-center text-sm font-medium self-center my-auto">
-          English
-        </div>
+        
+        <span className="mobile-menu-view mobile-menu bg-white bg-opacity-90 self-stretch flex items-start justify-between gap-5 mt-7 px-6 py-3.5 rounded-3xl border-[0.5px] border-solid border-neutral-500">
+      <div className="mobile-detect justify-center text-black text-center text-sm font-medium self-center grow whitespace-nowrap my-auto">
+        Detect language
       </div>
       <img
         loading="lazy"
-        srcSet="..."
-        className="aspect-[0.66] object-contain object-center w-[25px] overflow-hidden shrink-0 max-w-full"
+        src={process.env.PUBLIC_URL + '/Images/Down-arrow.svg'}
+        className="aspect-[0.76] object-contain object-center w-[22px] overflow-hidden self-center shrink-0 max-w-full my-auto"
       />
-    </div>
+      <div className="mobile-eng justify-center text-black text-center text-sm font-medium self-center my-auto">
+        English
+      </div>
+      <img
+        loading="lazy"
+        src={process.env.PUBLIC_URL + '/Images/Mobile/menu-mobile.svg'}
+        className="aspect-[0.66] object-contain object-center w-[25px] justify-center items-center overflow-hidden self-stretch shrink-0 max-w-full"
+      />
+    </span>
+      
+
 
         
 
