@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Insert from "./pages/Dashboard";
-import Dictionary from "./pages/Dictionary";
+import Home from "./Pages/Home";
+import Insert from "./Pages/Dashboard";
+import Dictionary from "./Pages/Dictionary";
 
 function App() {
   return (

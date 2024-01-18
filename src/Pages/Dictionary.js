@@ -141,7 +141,7 @@ function Header() {
 function Headline() {
   return (
 
-    <div className="flex w-full flex-col mt-9 px-16 max-md:max-w-full max-md:px-5">
+    <div className="desk-main flex w-full flex-col mt-9 px-16 max-md:max-w-full max-md:px-5">
       <div className="dictionary-header text-black text-2xl leading-6 tracking-tight ml-11 max-md:ml-2.5">
         Browse the Dictionary
       </div>
@@ -411,17 +411,6 @@ function Headline() {
 </div>
 </div>
  
-
-
-
-
-
-      
-
-
-
-   
-
     
   );
 }
@@ -431,135 +420,184 @@ function Headline() {
 function Letters() {
   return (
 
-      <div className="flex max-w-[697px] flex-col items-stretch">
-      <div className="flex w-full items-stretch justify-between gap-1.5 px-5 max-md:max-w-full max-md:flex-wrap">
+      
+
+      <span className="mobile-dict flex w-full flex-col mt-3.5 px-7">
+      
+      <div className="text-black text-base leading-6 tracking-tight self-stretch whitespace-nowrap mt-12">
+        Browse the Dictionary
+      </div>
+      <div className="bg-black w-[290px] shrink-0 max-w-full h-[3px] ml-3.5 mt-4 self-start" />
+      <div className="items-stretch content-start flex-wrap flex max-w-[250px] flex-col pr-6">
+
+        
+      <div className="mobile-letters flex items-stretch justify-between gap-1.5">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/07aede53841986336cb2cce152d511258c4b488a7542f1172622032306bdcbf6?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/5eeaa2752cedf9e39d4993a59d286077b3fb2e2cc3b5a54a5629ce862dfce76c?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab924909972e4eca8b38db56372e93158b6a4959db0c17f542014bf24959b387?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2c07f6472d6a542b2cb946a6da533d99ba8e569d5bc17d86334037ff5b23dbef?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/612db4246984bc4ce71be0118f673baadb26837e70498066faf302d892859803?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/344d95783c1cfb8337b47e8f3e218e5e222b366801fb7b5672fe193802d0ef71?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
+      </div>
+      <div className="flex items-stretch justify-between gap-1.5 mt-2.5">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/172c4b3f8f866920048afc4c12721bbeac3de8a856672293a8be06ec569a3e79?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/cf382d5769eae521f9751a76746105cca64ee668387dd22f829b219035a1739a?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/3024b23ac36a33f1c544fdce84ad0b66dde45f7f72a5ebdad51345ea40371c26?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/f0d1750158bc010cb3cdba51cc5e256cbd25e910aabd1cb0775318b47dd482fa?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/1e243c781577ed9f593f6244af3a9402298b987f4dfafb3d88ebb251cc62d1b0?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/441f290419d720081405570807a810082e8384ca046b49bfbb3b7ea67b9de206?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
+      </div>
+      <div className="flex items-stretch justify-between gap-1.5 mt-2.5">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2997cd1694557b5cdbafa55273072d145d3b5ea2ace61cf908d4d203d6a72596?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/a842a834420e0e774aa6811b87fc65ab51a36e0f0738ca8c5cba69a5bcc3f358?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2fd8de2f7a0d2fadd65eb651bcfebc5572ac9f2ecf8d63884ce73c009322f3ad?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/28632b16447b119386807973d5ea025c976011b4014148868f44a64f65ef74d9?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/e26b175aece832aed9ce0e4c4de9dd511ad2dfe8b9aa86041cfb680c197d0731?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2dfb16591cf296c9361ed1a1b28f8a4ac096b4aebf8c4c916e3b5a3292ea0b2a?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
       </div>
-      <div className="flex w-[228px] max-w-full items-stretch gap-1.5 mt-2.5 px-5 self-start">
+      <div className="flex items-stretch justify-between gap-1.5 mt-2.5">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/2cda7b7cf27354029aeaca5d2f00d43ada633e1cd8040061507adeacaac0f599?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/3d4afad65c5ce87f25d66dfdef2c036054e6b51cdbf023ac5fd464e369a8287d?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/ce427fc046cc5da66f084dc1cf2925096eb8a6156f13574de893ed936d1e5138?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/f59ec9fccbce0e4000489a281d8a52e960357b74c52936e70bdd4a33fcda76a7?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/5a2d405a06e885a89418ffde1b3294591682944d79bc537350e6233044bacb87?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/4603b7867862b0e0fd09c52a85b6f60361abdd5feef6ef0267e30a493017e5f5?"
-          className="aspect-square object-contain object-center w-full overflow-hidden shrink-0 flex-1"
+          className="aspect-square object-contain object-center w-[33px] overflow-hidden shrink-0 max-w-full"
         />
       </div>
     </div>
+      <div className="border bg-white bg-opacity-90 self-stretch flex shrink-0 h-[43px] flex-col mt-8 rounded-[30px] border-solid border-black border-opacity-50" />
+      <span className="bg-blue-900 self-stretch flex flex-col mt-5 pl-4 pr-20 py-11 rounded-2xl items-start">
+ 
+      <div className='dictionary-title'>
+        Dictionary
+        </div>
+        <div className='defination-title'>
+        Defination
+        </div>
+        <div className='dictionary-noun'>
+  Noun
+</div>
+<div className='dictionary-verb'>
+  Verb
+</div>
+<div className='dictionary-sentence'>
+  Example of sentence
+</div>
+ 
+
+      </span>
+
+      <span className="mobile-word text-black text-sm leading-[60.06px] border bg-white bg-opacity-90 self-stretch w-full justify-center ml-2.5 mt-7 pl-10 pr-16 pt-12 pb-44 rounded-3xl border-solid border-black items-start">
+      word
+    </span>
+    </span>
+   
+   
+       
+
+
+
        
       );
     }
+
+
+
 // main 
 
 function Maincontent() {

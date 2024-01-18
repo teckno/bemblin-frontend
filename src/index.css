@@ -273,6 +273,16 @@ flex-shrink: 0;
     top: 0;
     z-index: 100;
   }
+  
+  .desk-main{
+    display: none;
+  }
+  .dictionary{
+    display: none;
+  }
+  .dictionary-display{
+    display: none;
+  }
 }
 
 @import '../node_modules/tailwindcss/base.css';
@@ -465,4 +475,34 @@ line-height: normal;
   .mobile-menu-view {
     display: none;
   }
+  .mobile-dict{
+    display: none;
+  }
+ 
+}
+
+
+.text-black{
+  color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; /* 146.667% */
+letter-spacing: -0.408px;
+}
+
+.bg-black{
+  margin-left: 1px;
+}
+
+.mobile-letters{
+  padding-top: 20px;
+}
+.mobile-word{
+  margin-left: -1px;
+}
+.desk-main{
+  margin-left: 190px;
 }
