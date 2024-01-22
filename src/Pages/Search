@@ -1,0 +1,27 @@
+import React, { useState } from 'react';
+
+function SearchWord() {
+  const [word, setWord] = useState('');
+  const [result, setResult] = useState(null);
+
+  const handleSearch = async () => {
+    const response = await fetch(`/api/dictionaries/${word}`);
+    const data = await response.json();
+
+    if (response.ok) {
+      setResult(data);
+    } else {
+      console.error('Failed to fetch word');
+    }
+  };
+
+  return (
+    <div>
+      <input value={word} onChange={(e) => setWord(e.target.value)} placeholder="Word to search" />
+      <button onClick={handleSearch}>Search</button>
+      {result && <div>{JSON.stringify(result)}</div>}
+    </div>
+  );
+}
+
+export default SearchWord;

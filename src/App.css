@@ -27,6 +27,17 @@
 .App-link {
   color: #61dafb;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -36,3 +47,6 @@
     transform: rotate(360deg);
   }
 }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
