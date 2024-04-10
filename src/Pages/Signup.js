@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import Header from './Components/Header';
@@ -7,6 +8,7 @@ import Footer from './Components/Footer';
 const SignUpPage = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate(); // Initialize useNavigate
 
   // Function to handle form submission
   const handleSubmit = async (event) => {
@@ -21,8 +23,8 @@ const SignUpPage = () => {
       });
 
       if (response.ok) {
-        // Handle successful registration, such as redirecting the user or showing a success message
-        console.log('User registered successfully.');
+        // Redirect user to dashboard page after successful signup
+        navigate('/dashboard'); // Use navigate to redirect
       } else {
         // Handle error response
         console.error('Error registering user:', response.statusText);
