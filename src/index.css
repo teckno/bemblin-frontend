@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* index.css */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
@@ -88,8 +90,18 @@ font-weight: 400;
 line-height: 60px; /* 250% */
 }
 
+.text-logo{
+  color: #131313;
+font-family: Handlee;
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 60px; /* 250% */
+}
+
+
 .logo{
-  margin-left: -88px;
+  margin-left: -363px;
 }
 .holder{
   margin-left: -18px;
@@ -171,7 +183,7 @@ line-height: normal;
 
 .form button {
   padding: 10px 20px;
-  background-color: #007BFF;
+  background-color: #023e80;;
   color: white;
   border: none;
   border-radius: 5px;
@@ -179,9 +191,18 @@ line-height: normal;
 }
 
 .form button:hover {
-  background-color: #0056b3;
+  background-color: #023e80;;
 }
 
+
+.stand-text {
+  font-family: poppins;
+  
+}
+
+.text-col{
+  color: #FFF;
+}
 .header{
   width: 100%;
 height: 4.6rem;
@@ -504,5 +525,67 @@ letter-spacing: -0.408px;
   margin-left: -1px;
 }
 .desk-main{
-  margin-left: 190px;
+}
+
+/* TranslationSearch.css */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #023e80;;
+}
+
+.background-col{
+  background-color: #023e80 ;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.circle-ring {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #000; /* Adjust the border style as needed */
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 24px;
+  color: #000; /* Adjust the icon color as needed */
+}
+.circle-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.zoom-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.zoom-icon:hover {
+  transform: scale(1.4);
+}
+.header-padding{
+  padding-right: 100px;
+  padding-left: 100px;
+
 }
