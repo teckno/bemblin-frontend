@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from react-router-dom
+import { useNavigate } from 'react-router-dom';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 
 const LoginPage = () => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Initialize useNavigate
+  const [error, setError] = useState('');  // State for storing error messages
+  const navigate = useNavigate();
 
   // Function to handle form submission
   const handleLogin = async (event) => {
     event.preventDefault();
+    setError('');  // Reset error message at the beginning of a new login attempt
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/api/token/', {
+      const response = await fetch('http://127.0.0.1:8000/api/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          email,
+          username,
           password,
         }),
       });
@@ -26,17 +28,15 @@ const LoginPage = () => {
       const data = await response.json();
 
       if (response.ok) {
-        // Assuming the API returns a JWT token upon successful login
-        localStorage.setItem('token', data.access); // Store the token in local storage for future use
-        // Redirect user to dashboard page after successful login
+        localStorage.setItem('token', data.access);
         navigate('/dashboard');
       } else {
-        // Handle error response
-        console.error('Error logging in:', data.detail);
+        // Display an error message from the server or a default one
+        setError(data.detail || 'Invalid username or password');
       }
     } catch (error) {
       // Handle network errors
-      console.error('Network error:', error.message);
+      setError('Network error: ' + error.message);
     }
   };
 
@@ -45,16 +45,12 @@ const LoginPage = () => {
       <Header />
       <div className="min-h-screen flex justify-center items-center" style={{ backgroundColor: '#023e80' }}>
         <div className="max-w-md w-full p-8 bg-white rounded-lg shadow-lg">
-          <img
-            loading="lazy"
-            src={process.env.PUBLIC_URL + '/Images/logo.svg'}
-            className="square object-contain object-center w-34 h-74 overflow-hidden shrink-0 max-w-full"
-          />
           <h2 className="text-2xl font-bold mb-8 text-center" style={{ fontFamily: 'Poppins, sans-serif', color: '#023e80' }}>Login</h2>
           <form onSubmit={handleLogin}>
+            {error && <div className="mb-4 text-sm text-red-600">{error}</div>}  {/* Error message display */}
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-              <input type="email" id="email" name="email" className="mt-1 p-2 w-full border rounded-md" placeholder="Enter your email address" value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <label htmlFor="username" className="block text-sm font-medium text-gray-700">Username</label>
+              <input type="text" id="username" name="username" className="mt-1 p-2 w-full border rounded-md" placeholder="Enter your username" value={username} onChange={(e) => setUsername(e.target.value)} required />
             </div>
             <div className="mb-6">
               <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
