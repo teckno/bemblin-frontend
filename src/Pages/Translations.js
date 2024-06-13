@@ -64,18 +64,23 @@ function TranslationApp() {
     <div className='background-col'>
 
       <div className="container mx-auto h-screen flex flex-col justify-center items-center">
-      <h1 className="text-3xl text-col stand-text font-bold mb-4">Sentence Translation</h1>
-      <div className="flex items-center mb-4">
-        <select
-          value={selectedLanguage}
-          onChange={handleLanguageChange}
-          className="border stand-text border-gray-300 rounded-md px-4 py-2 mr-2 focus:outline-none font-poppins"
-        >
-          <option value="bemba">Bemba</option>
-          <option value="german">German</option>
-         
-        </select>
-        <div style={{ position: 'relative' }}>
+     <div>
+  <h1 className="text-3xl text-col stand-text font-bold mb-4">Language Learning App</h1>
+  <p className="text-base text-gray-700 mb-6">Welcome to our Language Learning App! We're excited to introduce you to our innovative language learning platform designed to make learning a new language both fun and effective. Founded by a passionate team of language enthusiasts, our goal is to break down barriers to language learning and empower individuals around the world to connect with each other through language.</p>
+  <p className="text-base text-gray-700 mb-6">With our app, you can explore a variety of languages, including Bemba and German, with more languages on the way. Whether you're a beginner or an advanced learner, our interactive lessons, immersive exercises, and real-time translation features are tailored to meet your unique learning needs.</p>
+  <p className="text-base text-gray-700 mb-6">Our mission is to provide an accessible and engaging language learning experience that fosters cultural understanding, communication, and collaboration across borders. Through this project, we aim to create a global community of language learners who can confidently navigate and appreciate the diverse linguistic landscape of our world.</p>
+  <p className="text-base text-gray-700 mb-6">Join us on this exciting journey as we strive to make language learning an enriching and rewarding experience for everyone. Let's break down language barriers together and unlock the endless possibilities that come with multilingualism. Start your language learning adventure today!</p>
+
+  <div className="flex items-center mb-4">
+    <select
+      value={selectedLanguage}
+      onChange={handleLanguageChange}
+      className="border stand-text border-gray-300 rounded-md px-4 py-2 mr-2 focus:outline-none font-poppins"
+    >
+      <option value="bemba">Bemba</option>
+      <option value="german">German</option>
+    </select>
+    <div style={{ position: 'relative' }}>
       <textarea
         value={inputText}
         onChange={handleInputChange}
@@ -98,13 +103,15 @@ function TranslationApp() {
         <FontAwesomeIcon icon={faImage} />
       </button>
     </div>
-        <button
-          onClick={translateSentence}
-          className="bg-blue-500 stand-text hover:bg-blue-600 rounded-md px-4 py-2 focus:outline-none font-poppins"
-        >
-          Translate
-        </button>
-      </div>
+    <button
+      onClick={translateSentence}
+      className="bg-blue-500 stand-text hover:bg-blue-600 rounded-md px-4 py-2 focus:outline-none font-poppins"
+    >
+      Translate
+    </button>
+  </div>
+</div>
+
       {translation && (
         <div className="bg-gray-100 p-4 rounded-md">
           <p className="text-lg stand-text font-semibold font-poppins text-blue-900">Translation:</p>

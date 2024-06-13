@@ -15,6 +15,8 @@ import Developers from './Pages/Developers';
 import Games from './Pages/Games';
 import Payment from './Pages/Donate';
 import MTN from './Pages/MTN';
+import AI from './Pages/ai';
+import AboutUs from './Pages/AboutUs';  
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
           <Route path="Games" element={<Games />} />
           <Route path="Donate" element={<Payment />} />
           <Route path="MTN" element={<MTN />} />
+          <Route path="AI" element={<AI />} />
+          <Route path="AboutUs" element={<AboutUs />} />
           
         </Route>
       </Routes>
