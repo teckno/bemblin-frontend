@@ -32,15 +32,10 @@ const Header = () => {
             src={process.env.PUBLIC_URL + '/Images/logo.svg'}
             className="square object-contain object-center w-34 h-74 overflow-hidden shrink-0 max-w-full"
           />
-          <div className="text-2xl text-logo leading-[60px] self-center grow whitespace-nowrap my-auto">
-            bemblin
-          </div>
+          <a href="/" className="text-2xl text-logo leading-[60px] self-center grow whitespace-nowrap my-auto">
+  bemblin
+</a>
         </div>
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
 
         <div className="md:hidden">
           <button onClick={toggleMenu}>
@@ -48,42 +43,63 @@ const Header = () => {
           </button>
         </div>
 
-        
-        <nav className={`md:block ${isMenuOpen ? 'block' : 'hidden'}`}>
-  <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-gray-600">
-    {/* Menu items */}
-    {[
-      { icon: faLanguage, text: "Translation" },
-      { icon: faBook, text: "Dictionary" },
-      { icon: faInfoCircle, text: "AboutUs" },
-      { icon: faUsers, text: "Community" },
-      { icon: faCode, text: "API" }
-    ].map((item, index) => (
-      <li key={index}>
-        <a href="#" className="hover:text-gray-300 flex items-center">
-          <FontAwesomeIcon 
-            icon={item.icon} 
-            className="mr-1 text-2xl transition duration-600 transform hover:scale-280"
-          />
-          {item.text}
-        </a>
-      </li>
-    ))}
-  </ul>
-</nav>
+        <nav className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} md:items-center md:justify-center md:mx-auto`}>
+          <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-gray-600">
+            {[
+             { icon: faLanguage, text: "Translation", link: "/translation" },
+             { icon: faBook, text: "Dictionary", link: "/dictionary" },
+             { icon: faInfoCircle, text: "AboutUs", link: "/aboutus" },
+             
+             { icon: faUsers, text: "Community", link: "/community" },
+             { icon: faCode, text: "API", link: "/api" }
+           ].map((item, index) => (
+             <li key={index}>
+               <a href={item.link} className="hover:text-gray-300 flex items-center">
+                 <FontAwesomeIcon 
+                   icon={item.icon} 
+                   className="mr-1 text-sm transition duration-600 transform hover:scale-280"
+                 />
+                 {item.text}
+               </a>
+             </li>
+            ))}
+            <li className="md:hidden flex flex-col space-y-4">
+            <a href="/login" className="inline-block bg-blue-500 text-gray px-4 py-2 rounded-full font-bold hover:bg-blue-400 transition duration-300">Login</a>
+<a href="/signup" className="inline-block bg-gray-300 text-gray-800 px-4 py-2 rounded-full font-bold hover:bg-gray-400 transition duration-300">Signup</a>
+            </li>
+          </ul>
+        </nav>
 
-
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        
-                <div className="flex items-center login_button space-x-4" >
-                  <button className="bg-blue-500 text-gray px-4 py-2 rounded-full font-bold hover:bg-blue-400 transition duration-300">Login</button>
-                  <button className="bg-gray-300 text-gray-800 px-4 py-2 rounded-full font-bold hover:bg-gray-400 transition duration-300">Signup</button>
-                </div>
-            </div>
+        <div className="hidden md:flex items-center login_button space-x-4">
+        <a href="/login" className="inline-block bg-blue-500 text-gray px-4 py-2 rounded-full font-bold hover:bg-blue-400 transition duration-300">Login</a>
+        <a href="/signup" className="inline-block bg-gray-300 text-gray-800 px-4 py-2 rounded-full font-bold hover:bg-gray-400 transition duration-300">Signup</a>
+        </div>
+      </div>
     </header>
   );
 };
 
 export default Header;
+
+<style jsx>{`
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+`}</style>

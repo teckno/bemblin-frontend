@@ -10,37 +10,37 @@ const PortalPage = () => {
         <h2 className="text-4xl font-bold mb-8 font-poppins text-primary">Portal</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faBook} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faBook} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Dictionary</h3>
             <p className="text-lg text-gray-600">Explore the dictionary</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faGamepad} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faGamepad} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Games</h3>
             <p className="text-lg text-gray-600">Play games</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faChalkboardTeacher} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faChalkboardTeacher} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Courses</h3>
             <p className="text-lg text-gray-600">Access courses</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faLanguage} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faLanguage} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Translations</h3>
             <p className="text-lg text-gray-600">Translate languages</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faCode} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faCode} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Developers</h3>
             <p className="text-lg text-gray-600">Developer resources</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faQuestionCircle} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faQuestionCircle} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Q/A</h3>
             <p className="text-lg text-gray-600">Questions and Answers</p>
           </a>
           <a href="#" className="py-6 px-8 bg-gray-200 rounded-lg block hover:bg-gray-300">
-            <FontAwesomeIcon icon={faHeart} className="text-5xl mb-4 text-primary" />
+            <FontAwesomeIcon icon={faHeart} style={{ fontSize: '18px' }} className="mb-4 text-primary" />
             <h3 className="text-xl font-semibold mb-2 text-gray-700">Donation</h3>
             <p className="text-lg text-gray-600">Support us</p>
           </a>

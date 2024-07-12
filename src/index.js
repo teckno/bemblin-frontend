@@ -3,9 +3,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import DashboardPage from "./Pages/Dashboard";
-import Dictionary from "./Pages/Dictionary";
-import Search from "./Pages/Search";
-import TranslationSearch from './Pages/Translations';
+import Dictionary from "./Pages/Search";
+import Search from "./Pages/Dictionary";
+import TranslationSearch from './Pages/Translation';
 import PaymentGateway from './Pages/Payments';
 import SignUpPage from './Pages/Signup';
 import LoginPage from './Pages/Login';
@@ -16,7 +16,8 @@ import Games from './Pages/Games';
 import Payment from './Pages/Donate';
 import MTN from './Pages/MTN';
 import AI from './Pages/ai';
-import AboutUs from './Pages/AboutUs';  
+import AboutUs from './Pages/aboutus';  
+import Api from './Pages/api';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="Dashboard" element={<DashboardPage />} />
           <Route path="Payments" element={<PaymentGateway />} />
           <Route path="Search" element={<Search />} />
-          <Route path="Translations" element={<TranslationSearch />} />
+          <Route path="Translation" element={<TranslationSearch />} />
           <Route path="Login" element={<LoginPage />} />
           <Route path="Developers" element={<Developers />} />
           <Route path="Games" element={<Games />} />
@@ -39,6 +40,7 @@ function App() {
           <Route path="MTN" element={<MTN />} />
           <Route path="AI" element={<AI />} />
           <Route path="AboutUs" element={<AboutUs />} />
+          <Route path="api" element={<Api />} />
           
         </Route>
       </Routes>
