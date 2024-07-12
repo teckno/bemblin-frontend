@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faDiscord, faYoutube, faTwitter, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faDiscord, faYoutube, faTwitter, faTiktok, faGooglePlay, faAppStore } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -12,6 +12,8 @@ const Footer = () => {
           <a href="https://www.youtube.com"><FontAwesomeIcon icon={faYoutube} className="text-white text-sm mx-2" /></a>
           <a href="https://www.twitter.com"><FontAwesomeIcon icon={faTwitter} className="text-white text-sm mx-2" /></a>
           <a href="https://www.tiktok.com"><FontAwesomeIcon icon={faTiktok} className="text-white text-sm mx-2" /></a>
+          <a href="https://play.google.com/store"><FontAwesomeIcon icon={faGooglePlay} className="text-white text-sm mx-2" /></a>
+          <a href="https://www.apple.com/app-store/"><FontAwesomeIcon icon={faAppStore} className="text-white text-sm mx-2" /></a>
         </div>
         <p className="text-sm">&copy; 2024 Language Learning App. All rights reserved.</p>
       </div>
