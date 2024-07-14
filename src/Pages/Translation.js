@@ -64,19 +64,18 @@ function TranslationApp() {
     <div className='background-col'>
 
       <div className="container mx-auto h-screen flex flex-col justify-center items-center">
-     <div>
-  <center><h1 className="text-3xl text-col stand-text font-bold mb-4">Translation</h1></center>
-
-  <div className="flex items-center mb-4">
-    <select
-      value={selectedLanguage}
-      onChange={handleLanguageChange}
-      className="border stand-text border-gray-300 rounded-md px-4 py-2 mr-2 focus:outline-none font-poppins"
-    >
-      <option value="bemba">Bemba</option>
-      <option value="german">German</option>
-    </select>
-    <div style={{ position: 'relative' }}>
+      <h1 className="text-3xl text-col stand-text font-bold mb-4">Sentence Translation</h1>
+      <div className="flex items-center mb-4">
+        <select
+          value={selectedLanguage}
+          onChange={handleLanguageChange}
+          className="border stand-text border-gray-300 rounded-md px-4 py-2 mr-2 focus:outline-none font-poppins"
+        >
+          <option value="bemba">Bemba</option>
+          <option value="german">German</option>
+         
+        </select>
+        <div style={{ position: 'relative' }}>
       <textarea
         value={inputText}
         onChange={handleInputChange}
