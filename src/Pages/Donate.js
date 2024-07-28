@@ -6,7 +6,7 @@ function DonationPage() {
   useEffect(() => {
     // Dynamically load PayPal button script
     const script = document.createElement('script');
-    script.src = 'https://www.paypal.com/sdk/js?client-id=AUCrLayg03De945drbB8zTDdwkGhUrRyPojJUU1u6eLAsJB5yaSOYhdLHenlSyHZLq6Xu5bvserjAkkl';
+    script.src = 'https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID_HERE&currency=USD';
     script.async = true;
     script.onload = initializePayPalButton;
     document.body.appendChild(script);
