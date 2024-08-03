@@ -17,8 +17,6 @@ import Payment from './Pages/Donate';
 import MTN from './Pages/MTN';
 import AI from './Pages/ai';
 import AboutUs from './Pages/AboutUs';  
-import AI from './Pages/ai';
-import AboutUs from './Pages/aboutus';  
 import Api from './Pages/api';
 
 function App() {

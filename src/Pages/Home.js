@@ -19,7 +19,7 @@ function HomePage() {
           <span className="bemblin-title"> Bemblin</span>
             </h1>
             <p className="text-gray-500 font-col max-w-xl leading-relaxed sm:mx-auto lg:ml-0">
-          "African languages have long been undocumented in their writing.One of the goals of bemblin is to help people get on the journey of learning an African language through gamification and documenting the different languages.."
+          "African languages have long been undocumented in their writing. One of the goals of bemblin is to help people get on the journey of learning an African language through gamification and documenting the different languages.."
             </p>
             <div>
           
