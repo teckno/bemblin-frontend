@@ -16,10 +16,10 @@ import Games from './Pages/Games';
 import Payment from './Pages/Donate';
 import MTN from './Pages/MTN';
 import AI from './Pages/ai';
-import AboutUs from './Pages/AboutUs';  
-import AI from './Pages/ai';
-import AboutUs from './Pages/aboutus';  
+import AboutUs from './Pages/AboutUs';    
 import Api from './Pages/api';
+import Lesson from './Pages/Lesson.js';
+import Wait from './Pages/Waitinglist.js';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
         <Route>
           <Route index element={<Home />} />
           <Route path="Portal" element={<PortalPage />} />
+          <Route path="Waitinglist" element={<Wait />} />
           <Route path="Community" element={<Community />} />
           <Route path="Dictionary" element={<Dictionary />} />
           <Route path="Signup" element={<SignUpPage />} />
@@ -45,6 +46,7 @@ function App() {
           <Route path="AI" element={<AI />} />
           <Route path="AboutUs" element={<AboutUs />} />
           <Route path="api" element={<Api />} />
+          <Route path="Lesson" element={<Lesson />} />
           
         </Route>
       </Routes>
